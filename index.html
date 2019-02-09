@@ -2,13 +2,15 @@
 <html lang="pt-br" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/material-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/materialize.min.css"><style>.Card{display:none;}</style>
+    <link rel="stylesheet" type="text/css" href="setas.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/materialize.min.js"></script>
     <title>Modelagem</title>
   </head>
-  <body>
+  <body onload="Auto_RowScrool()">
     <nav>
        <div class="nav-wrapper row col s12 blue darken-3">
           <div class="col s2">
@@ -36,8 +38,8 @@
      </div>
    </nav>
     <div class="row col s12">
-    <div class="col s3">
-      <div class="card">
+    <div class="col s3 Card">
+      <div class="card" id="um">
         <div class="card-image">
           <img src="1.png">
           <span class="card-title">Evento 1</span>
@@ -48,8 +50,8 @@
         </div>
       </div>
     </div>
-    <div class="col s3">
-      <div class="card">
+    <div class="col s3 Card">
+      <div class="card" id="dois">
         <div class="card-image">
           <img src="1.png">
           <span class="card-title">Evento 2</span>
@@ -60,8 +62,8 @@
         </div>
       </div>
     </div>
-    <div class="col s3">
-      <div class="card">
+    <div class="col s3 Card">
+      <div class="card" id="tres">
         <div class="card-image">
           <img src="1.png">
           <span class="card-title">Evento 3</span>
@@ -72,8 +74,8 @@
         </div>
       </div>
     </div>
-    <div class="col s3">
-      <div class="card">
+    <div class="col s3 Card">
+      <div class="card" id="quatro">
         <div class="card-image">
           <img src="1.png">
           <span class="card-title">Evento 4</span>
@@ -84,7 +86,84 @@
         </div>
       </div>
     </div>
+<div class="col s3 Card">
+    <div class="card" id="cinco">
+      <div class="card-image">
+        <img src="1.png">
+        <span class="card-title">Evento 5</span>
+      </div>
+      <div class="card-content">
+        <p>I am a very simple card. I am good at containing small bits of information.
+        I am convenient because I require little markup to use effectively.</p>
+      </div>
+    </div>
   </div>
+<div class="col s3 Card">
+  <div class="card" id="seis">
+    <div class="card-image">
+      <img src="1.png">
+      <span class="card-title">Evento 6</span>
+    </div>
+    <div class="card-content">
+      <p>I am a very simple card. I am good at containing small bits of information.
+      I am convenient because I require little markup to use effectively.</p>
+    </div>
+  </div>
+</div>
+<div class="col s3 Card">
+  <div class="card" id="sete">
+    <div class="card-image">
+      <img src="1.png">
+      <span class="card-title">Evento 7</span>
+    </div>
+    <div class="card-content">
+      <p>I am a very simple card. I am good at containing small bits of information.
+      I am convenient because I require little markup to use effectively.</p>
+    </div>
+  </div>
+</div>
+<div class="col s3 Card">
+  <div class="card" id="oito">
+    <div class="card-image">
+      <img src="1.png">
+      <span class="card-title">Evento 8</span>
+    </div>
+    <div class="card-content">
+      <p>I am a very simple card. I am good at containing small bits of information.
+      I am convenient because I require little markup to use effectively.</p>
+    </div>
+  </div>
+</div>
+<div class="col s3 Card">
+  <div class="card" id="nove">
+    <div class="card-image">
+      <img src="1.png">
+      <span class="card-title">Evento 9</span>
+    </div>
+    <div class="card-content">
+      <p>I am a very simple card. I am good at containing small bits of information.
+      I am convenient because I require little markup to use effectively.</p>
+    </div>
+  </div>
+</div>
+<div class="col s3 Card">
+  <div class="card" id="dez">
+    <div class="card-image">
+      <img src="1.png">
+      <span class="card-title">Evento 10</span>
+    </div>
+    <div class="card-content">
+      <p>I am a very simple card. I am good at containing small bits of information.
+      I am convenient because I require little markup to use effectively.</p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="mateus">
+  <a href="#" class="setas setas-esquerda"><i class="material-icons" onmousedown="Main_Control(-1)">chevron_left</i></a>
+  <a href="#" class="setas setas-direita"><i class="material-icons" onmousedown="Main_Control(+1)">chevron_right</i></a>
+</div>
+
   <div class="row col s12">
     <div class="col s8">
       <h1 class="left">O que é/faz</h1>
@@ -95,4 +174,5 @@
     </div>
   </div>
   </body>
+  <script src="js/ShowDivs.js"></script>
 </html>
