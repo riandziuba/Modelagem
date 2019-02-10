@@ -10,7 +10,7 @@
     <script src="js/materialize.min.js"></script>
     <title>Modelagem</title>
   </head>
-  <body onload="Auto_RowScrool()">
+  <body onload="Auto_RowScrool()" data-spy="scroll" data-target=".navbar" data-offset="50">
     <nav>
        <div class="nav-wrapper row col s12 blue darken-3">
           <div class="col s2">
@@ -29,7 +29,7 @@
        </div>
      </nav>
      <nav>
-     <div class="nav-wrapper white">
+     <div class="nav-wrapper white navbar-fixed">
        <ul id="nav-mobile" class="left hide-on-med-and-down">
          <li><a href="#" class="grey-text text-darken-4">Pagina Inicial</a></li>
          <li><a href="badges.html" class="grey-text text-darken-4">Pesquisa Avançada</a></li>
@@ -37,6 +37,7 @@
        </ul>
      </div>
    </nav>
+   <div class="navbar navbar-fixed scrollspy" id="#home" >
     <div class="row col s12">
     <div class="col s3 Card">
       <div class="card" id="um">
@@ -158,21 +159,38 @@
     </div>
   </div>
 </div>
-</div>
 <div class="mateus">
-  <a href="#" class="setas setas-esquerda"><i class="material-icons" onmousedown="Main_Control(-1)">chevron_left</i></a>
-  <a href="#" class="setas setas-direita"><i class="material-icons" onmousedown="Main_Control(+1)">chevron_right</i></a>
+  <a href="#" class="setas setas-esquerda"><i class="material-icons icon_button" onmousedown="Prev()">chevron_left</i></a>
+  <a href="#" class="setas setas-direita"><i class="material-icons icon_button" onmousedown="Next()">chevron_right</i></a>
+
+</div>
+</div>
 </div>
 
   <div class="row col s12">
-    <div class="col s8">
-      <h1 class="left">O que é/faz</h1>
+    <div class="col s7">
+      <h1 class="">O que é/faz</h1>
+      <p>	Lorem ipsum potenti ac cubilia tempus suscipit convallis, platea senectus cubilia est aliquet nisi, consequat dictum proin lacinia nam cras. etiam feugiat id quisque eleifend sapien vitae rhoncus ornare, blandit varius quisque amet ad platea porttitor accumsan, lacus a habitasse eleifend sed pellentesque primis. rhoncus curabitur leo facilisis egestas mi rhoncus eleifend, nisl suspendisse conubia pellentesque scelerisque nisi tortor ornare, adipiscing diam lacinia cursus ipsum pellentesque. molestie nibh rutrum justo a ipsum ut rutrum, diam orci risus suspendisse odio quisque, cursus aptent eros aliquam leo rutrum. habitasse fames tortor nulla quisque aenean fermentum sem, dictum justo habitasse donec consequat habitant arcu, lacinia duis consequat vel euismod vestibulum.
+
+	Dapibus aliquam porttitor sodales phasellus neque inceptos rutrum semper sapien, fames ut tortor ultricies proin sagittis nisl rhoncus maecenas lorem, habitant dictumst aliquet etiam eget turpis dapibus at. praesent ipsum faucibus felis blandit varius donec sollicitudin massa, pharetra tempus platea rhoncus nam duis hac venenatis convallis, proin scelerisque morbi quam convallis in magna. eleifend diam mattis pulvinar aenean suspendisse pretium eleifend faucibus massa elementum bibendum netus, leo a proin interdum ac vulputate inceptos vulputate tortor facilisis. blandit viverra ligula fusce purus dictum sodales ullamcorper varius, ullamcorper congue dolor sed viverra class dictum, magna metus auctor nam nostra ligula adipiscing.
+
+	Tempus vulputate etiam eros quisque ut enim, est auctor feugiat class lacinia, curae sem eu enim nec. posuere inceptos vehicula nisi inceptos proin porta auctor, fringilla potenti elit integer aliquet elementum posuere lobortis, at aliquam posuere ad euismod curabitur. id a habitant vivamus enim in potenti curae eget id aptent donec urna, a inceptos placerat senectus posuere hendrerit quisque ut augue senectus pellentesque. id proin malesuada quisque consectetur porttitor sapien, nisi feugiat fermentum adipiscing ut, senectus volutpat duis feugiat mi. sem vulputate phasellus himenaeos proin porttitor consequat adipiscing, eget habitant quisque taciti lorem tempus vestibulum nisl, sodales velit egestas molestie tempus inceptos.
+
+	Dictum convallis iaculis vitae quisque mi fusce hac feugiat himenaeos bibendum fusce vitae ultricies, auctor vitae rhoncus aliquam velit euismod diam aliquet vehicula volutpat porta in. egestas at arcu per aliquam molestie elit, velit potenti laoreet vulputate auctor libero tellus, dui aenean nisl scelerisque aptent. velit nisl tempus pretium suspendisse felis ultrices cubilia bibendum lorem interdum congue, sed consectetur euismod mauris cubilia curae aliquet ut nam at placerat, egestas et imperdiet vulputate ultrices urna bibendum habitant fames justo. molestie nibh nunc elit sit luctus ac sollicitudin enim class leo, cubilia lectus tempus augue nec porta vivamus semper quis duis, feugiat laoreet aenean scelerisque venenatis dapibus diam pellentesque aenean.
+
+	Litora fames gravida scelerisque egestas quisque enim, dictumst aptent orci rutrum sed nunc, nec vel erat est nisi. senectus accumsan cubilia ut hendrerit aliquam turpis faucibus erat torquent integer conubia, ad sagittis consequat aliquam rutrum sem quisque fermentum egestas cursus condimentum diam, eleifend tortor massa volutpat aliquam netus magna fusce diam sed. nostra aliquam sodales tincidunt scelerisque ut consectetur diam nulla posuere pellentesque lorem, ultricies purus sed felis erat pretium faucibus a velit ornare, semper nunc feugiat fringilla litora primis dictumst aliquam cras at. </p>
     </div>
     <div class="col s4 grey lighten-3">
       <h3 class="center">Notícias</h3>
-      <p>blablablablablablablablablablablabla</p>
+      <p>Lorem ipsum elit duis justo praesent nibh rhoncus sem augue sollicitudin, varius suspendisse rutrum netus elit fringilla sapien porttitor conubia, ad fames rutrum integer etiam sodales libero euismod at. pellentesque malesuada sit scelerisque faucibus nunc mollis fringilla lacinia vestibulum, curabitur feugiat ligula fermentum vel pharetra netus aenean, curabitur neque ante lorem a tortor metus mollis. eget fusce etiam mattis ac non maecenas nunc pretium ullamcorper habitant, nec aenean duis ultricies donec augue condimentum dictum metus congue dolor, mi eros ullamcorper platea mattis augue vitae neque magna. donec lacinia sagittis neque donec justo ut augue, convallis vehicula curae conubia auctor nec fames, ultrices dictumst primis elit facilisis elit. </p>
     </div>
   </div>
   </body>
   <script src="js/ShowDivs.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+  $('.scrollspy').scrollSpy();
+});
+
+  </script>
 </html>
