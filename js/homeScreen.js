@@ -12,7 +12,7 @@
 
 */
 
-var Time_of_Caroussel = 7  // defina aki o tempo q demora para o caroussel rolar automaticamente.
+var Time_of_Caroussel = 1       // defina aki o tempo q demora para o caroussel rolar automaticamente.
                                //
 var Time_Sleep_Caroussel = 10 //defina aki o tempo q demora para o carousel voltar a rolar Automaticamente quando o
                              // usuario clica em uma das setas

@@ -5,7 +5,7 @@ create database projeto;
     id int primary key auto_increment,
     titulo varchar(200) not null,
     instituição varchar(200),
-    local varchar(45),
+    local int,
     palavraspasse varchar(200) not null,
     nivel int,
     secao int,
