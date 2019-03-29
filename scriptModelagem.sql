@@ -3,12 +3,11 @@ create database projeto;
 
   create table trabalho (
     id int primary key auto_increment,
-    titulo varchar(200) not null,
+    titulo varchar(200) not null unique,
     instituição varchar(200),
     local int,
     palavraspasse varchar(200) not null,
     nivel int,
-    secao int,
     tipo int,
     ano date
   );

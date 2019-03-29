@@ -16,10 +16,9 @@
       $sql .= "and t.secao = {$secao} ";
     }
     if (isset($_POST['ano'])){
-      $ano = date("Y-m-d" strtotime("{$_POST['ano']}-01-01");
+      $ano = date("Y-m-d", strtotime("{$_POST['ano']}-01-01"));
       $sql .= "and t.ano = year($ano)";
     }
-}
 $resultado = mysqli_query($conexao, $sql);
     while ($row = mysqli_fetch_array($resultado)) {
         echo "<tr><td>", $row[1]."</td><td>".date('d/m/Y', strtotime($row[2]))."</td><td>".$row[3]."</td></tr>";
