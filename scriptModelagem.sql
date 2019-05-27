@@ -4,8 +4,13 @@ create database projeto;
   create table trabalho (
     id int primary key auto_increment,
     titulo varchar(200) not null unique,
+<<<<<<< HEAD
     instituicao varchar(200),
     meios int,
+=======
+    instituição varchar(200),
+    local int,
+>>>>>>> 5d3ebc1abf82350001cc5ac1a12bb1bd6ad038f7
     palavraspasse varchar(200) not null,
     nivel int,
     tipo int,
