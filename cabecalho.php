@@ -20,9 +20,10 @@
                 <div class="nav-wrapper white">
                     <ul id="nav-mobile" class="left">
                         <li><a href="index.php" class="grey-text text-darken-4">Pagina Inicial</a></li>
-                        <li><a href="pesquisaAvancada.html" class="grey-text text-darken-4">Pesquisa Avançada</a></li>
+                        <li><a href="pesquisaAvancada.php" class="grey-text text-darken-4">Pesquisa Avançada</a></li>
                         <li><a href="livros.php" class="grey-text text-darken-4">Livros</a></li>
-                        <li><a href="Links.php" class="grey-text text-darken-4">Links</a></li>
+                        <li><a href="links.php" class="grey-text text-darken-4">Links</a></li>
+                        <li><a href="contato.php" class="grey-text text-darken-4">Contato</a></li>
                     </ul>
                 </div>
             </nav>

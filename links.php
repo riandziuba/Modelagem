@@ -2,15 +2,8 @@
 <html lang="pt-br" dir="ltr">
 
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/material-icons.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/materialize.min.css" />
-    <link rel="stylesheet" href="css/css.css" />
-    <link rel="stylesheet" type="text/css" href="css/setas.css" />
-    <script src="js/jquery.min.js"></script>
-    <script src="js/materialize.min.js"></script>
-    <title>Modelagem</title>
+    <?php require_once 'head.html'; ?>
+    <title>CREMME - Links</title>
   </head>
     <body>
         <?php
@@ -30,4 +23,5 @@
             </div>
         </main>
     </body>
+    <?php require_once 'javas.html'; ?>
 </html>
