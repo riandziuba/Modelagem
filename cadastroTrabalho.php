@@ -24,32 +24,15 @@
                             <label for="instituicao">Instituição</label>
                         </div>
                         <div class="input-field col s2">
-                            <select name="tipo">
-                                <option value="" disabled selected>Escolha sua opção</option>
-                                <option value="1">Tese</option>
-                                <option value="2">TC</option>
-                                <option value="3">Artigo</option>
-                                <option value="4">Anais</option>
-                                <option value="5">Dissertação</option>
-                            </select>
-                            <label>Tipo de Trabalho</label>
+                            <?php geraSelect("tipo", '', "id", "descricao", "tipo", false)?>
+                            <label for="tipo">Tipo de Trabalho</label>
                         </div>
                         <div class="input-field col s2">
-                            <select name="meios">
-                                <option value="" disabled selected>Escolha sua opção</option>
-                                <option value="1">Portais</option>
-                                <option value="2">Revista</option>
-                            </select>
-                            <label for="meios">Local de Publicação</label>
+                        <?php geraSelect("secao", '', "id", "descricao", "secao", false)?>
+                            <label for="secao">Caracterização de Seção</label>
                         </div>
                         <div class="input-field col s2">
-                            <select name="nivel">
-                                <option value="" disabled selected>Escolha sua opção</option>
-                                <option value="1">Ensino Médio</option>
-                                <option value="2">Formação de Professsor</option>
-                                <option value="3">Ensino Infantil</option>
-                                <option value="4">Ensino Fundamental</option>
-                            </select>
+                        <?php geraSelect("nivel", '', "id", "descricao", "nivel", false)?>
                             <label for="nivel">Nível de Ensino/Etapa</label>
                         </div>
                     </div>
@@ -70,14 +53,19 @@
                         </div>
                     </div>
                     <div class="row">
-                         <div class="input-field offset-s1 col s5">
-                            <textarea id="resumo" name="resumo" class="materialize-textarea" data></textarea>
-                            <label for="resumo">Resumo</label>
-                        </div>
-                        <div class="input-field col s5">
+                        <div class="input-field col s3 offset-s1">
                             <textarea id="link" name="link" class="materialize-textarea" data></textarea>
                             <label for="link">Link</label>
                         </div>
+                        <div class="input-field col s2">
+                            <?php geraSelect("`local`", '', "id", "descricao", "local", false) ?>
+                            <label for="local">Local de Publicação</label>
+                        </div>
+                         <div class="input-field  col s5">
+                            <textarea id="resumo" name="resumo" class="materialize-textarea" data></textarea>
+                            <label for="resumo">Resumo</label>
+                        </div>
+                       
                     </div>
                     <div class="center">
                     <button type="button" onclick="insertData()" class="btn">Cadastrar</button>

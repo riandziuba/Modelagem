@@ -10,6 +10,7 @@ class banco {
         try {
             $this->pdo = new PDO('mysql:host=localhost;dbname=projeto', "root", "");// dbname é o nome do banco, o segundo campo o usuario e o terceiro é a senha do banco
             $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $this->pdo->exec("SET CHARACTER SET utf8");
         } catch (PDOException $e) {
             echo 'Error: ' . $e->getMessage();
         }
@@ -49,6 +50,7 @@ class banco {
 
     public function select($sql) {
         $this->conexao();
+        
         try {
             $consulta = $this->pdo->query($sql);
             $vetor = null;

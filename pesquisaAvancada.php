@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
     <?php require_once 'connect/connect.php'; 
-    $meios = isset($_POST['meios'])?$_POST['meios']:'';
+    require_once 'util.php';    
+    $secao = isset($_POST['secao'])?$_POST['secao']:'';
+    $local = isset($_POST['local'])?$_POST['local']:'';
     $nivel = isset($_POST['nivel'])?$_POST['nivel']:'';
     $ano = isset($_POST['ano'])?$_POST['ano']:'';
     $tipo =isset($_POST['tipo'])?$_POST['tipo']:'';
@@ -16,6 +18,14 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/materialize.min.js"></script>
         <title>Modelagem</title>
+        <script>
+            console.log(document.getElementById('filter'));
+            function Filter_Hover(){
+                if (document.getElementById('filter').style.display == "none") document.getElementById('filter').style.display = "block";
+                else document.getElementById('filter').style.display = "none";
+
+            }
+        </script>
     </head>
 
     <body>
@@ -28,48 +38,31 @@
                             <i class="material-icons prefix">search</i>
                             <input id="pesquisa" name='busca' type="text" class="validate" value="<?php echo $busca ?>">
                             <label for="pesquisa">Pesquisar</label>
+                            <div class="col s1">
+                            <a onmouseover="getElementById('filter').style.display = 'block'"><i class="material-icons">arrow_drop_down</i></a>
+
+
                         </div>
+                        </div>
+                        
                         <div class="col s12">
-                            <div class="">
+                            <div id="filte" class="filter" onmouseout="document.getElementById('filter').style.display = 'none';">
                                 <h3>Filtros</h3 >
                                 <div class="input-field col s6">
-                                    <select name="tipo">
-                                        <option value="-1" selected>Escolha sua opção</option>
-                                        <option value="1" <?php echo $tipo == 1?"selected":"";?>
-                                        >Tese</option>
-                                        <option value="2" <?php echo $tipo == 2?"selected":"";?>
-                                        >TC</option>
-                                        <option value="3" <?php echo $tipo == 3?"selected":"";?>
-                                        >Artigo</option>
-                                        <option value="4" <?php echo $tipo == 4?"selected":"";?>
-                                        >Anais</option>
-                                        <option value="5" <?php echo $tipo == 5?"selected":"";?>
-                                        >Dissertação</option>
-                                    </select>
-                                    <label>Tipo de Trabalho</label>
+                                <?php geraSelect("tipo", $tipo, "id", "descricao", "tipo", false)?>
+                                    <label for="tipo">Tipo de Trabalho</label>
                                 </div>
                                 <div class="input-field col s6">
-                                    <select name="meios">
-                                        <option value="-1" selected>Escolha sua opção</option>
-                                        <option value="1"  <?php echo $meios == 1?"selected":"";?>
-                                        >Portais</option>
-                                        <option value="2" <?php echo $meios == 2?"selected":"";?>>Revista</option>
-                                    </select>
+                                <?php geraSelect("local", $local, "id", "descricao", "local", false)?>
                                     <label>Local de Publicação</label>
                                 </div>
                                 <div class="input-field col s6">
-                                    <select name="nivel">
-                                        <option value="-1" selected>Escolha sua opção</option>
-                                        <option value="1"<?php echo $nivel == 1?"selected":"";?>>Ensino Médio</option>
-                                        <option value="2" <?php echo $nivel == 2?"selected":"";?>>Formação de Professsor</option>
-                                        <option value="3" <?php echo $nivel == 3?"selected":"";?>>Ensino Infantil</option>
-                                        <option value="4" <?php echo $nivel == 4?"selected":"";?>>Ensino Fundamental</option>
-                                    </select>
+                                <?php geraSelect("nivel", $nivel, "id", "descricao", "nivel", false)?>
                                     <label>Nível de Ensino/Etapa</label>
                                 </div>
                                 <div class="input-field col s6">
                                     <select name="ano">
-                                        <option value="-1" selected>Escolha sua opção</option>
+                                        <option value="-1" selected >(nenhum)</option>
                                         <?php   for ($i=2000; $i <= date("Y"); $i++) { 
                                             echo "<option value='$i'";
                                             echo $ano == $i?"selected":"";
@@ -77,6 +70,10 @@
                                         } ?>
                                     </select>
                                     <label>Ano de Publicação</label>
+                                </div>
+                                <div class="input-field col s6 offset-s3">
+                                <?php geraSelect("secao", $secao, "id", "descricao", "secao", false)?>
+                                <label for="secao">Caracterização de Seção</label>
                                 </div>
                             </div>
                         </div>
@@ -112,13 +109,17 @@
                         } if (isset($_POST['tipo']) and $_POST['tipo'] != -1) {
                             $tipo = $_POST['tipo'];
                             $sql .= "and t.tipo = {$tipo} ";
-                        }if (isset($_POST['meios']) and $_POST['meios'] != -1) {
-                            $meios = $_POST['meios'];
-                            $sql .= "and t.meios = {$meios} ";
+                        }if (isset($_POST['local']) and $_POST['local'] != -1) {
+                            $local = $_POST['local'];
+                            $sql .= "and t.local = {$local} ";
                         }
                         if (isset($_POST['ano']) and $_POST['ano'] != -1) {
                             $ano = $_POST['ano'];
                             $sql .= "and t.ano = $ano";
+                        }
+                        if (isset($_POST['secao']) and $_POST['secao'] != -1) {
+                            $secao = $_POST['secao'];
+                            $sql .= "and t.secao = $secao";
                         }
                         $sql .= " group by t.id";
                        

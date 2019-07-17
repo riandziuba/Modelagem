@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
 
-    <head>
-        <?php require_once 'head.html';?>
-        <title>CREMME - Pagina Inicial</title>
-    </head>
+<head>
+    <?php require_once 'head.html';?>
+    <title>CREMME - Pagina Inicial</title>
+</head>
 
-    <body onload="Auto_RowScrool()">
-        <?php require_once 'cabecalho.php';?>
-        <main>
-        <div class="row col s12">
+<body onload="Auto_RowScrool()">
+    <?php require_once 'cabecalho.php';?>
+    <main>
+        <!-- <div class="row col s12">
             <div class="col s3 Card">
                 <div class="card small" id="um">
                     <div class="card-image">
@@ -132,26 +132,43 @@
             </div>
             <a href="#" class="setas setas-esquerda"><i class="material-icons icon_button" onmousedown="Prev()">chevron_left</i></a>
             <a href="#" class="setas setas-direita"><i class="material-icons icon_button" onmousedown="Next()">chevron_right</i></a>
-        </div>
+        </div>-->
 
-
+        <br>
 
         <div class="row s12">
             <div class="col s7">
-                <h1 class="indigo-text">O que é?</h1>
-                <p class="justify">Lorem ipsum fames consectetur augue feugiat cubilia quisque nulla amet mollis justo tellus mattis, libero inceptos pellentesque consequat praesent volutpat sociosqu himenaeos potenti ullamcorper eu. aenean feugiat proin tempus conubia class nunc cras congue, rhoncus etiam justo consequat at platea ad, ante donec volutpat sollicitudin potenti ipsum mattis. vel nisi sem sed sagittis cubilia hac eleifend, dictumst id feugiat blandit mollis malesuada nostra etiam, eros aliquet aptent leo taciti felis. pulvinar ut sollicitudin nisl a vulputate enim morbi, non cras velit nunc in viverra nulla, felis lobortis hac vulputate faucibus dapibus.
+                <h1 class="indigo-text">Quem somos?</h1>
+                <p class="justify">O CREMME deriva de um projeto que pretende contribuir com a Educação Matemática por
+                    meio da divulgação de estudos Modelagem Matemática na Educação. Dessa forma, podemos possibilitar a
+                    expressão de um amplo mapa de pesquisas e experiências que envolvem a tendência, subsidiando assim
+                    professores que ensinam matemática na sala de aula, formadores, pesquisadores e estudantes de cursos
+                    de graduação e pós-graduação. Inicialmente o projeto pretende ter como foco o cenário nacional, para
+                    futuramente, avançarmos para outros cenários. </p>
+                <p>Nesse sentido, você encontrará aqui:</p>
+                <ul class="collection">
+                    <li class="collection-item">Resumos e respectivo acesso para trabalhos acadêmicos (TC, Dissertação e Tese) e artigos
+                        publicados em revistas ou em anais de eventos.</li>
+                    <li class="collection-item">Indicação de livros.</li>
+                    <li class="collection-item">Links para acesso de Dossiês temáticos, Grupos de pesquisas, GT 10 da SBEM - MM, links para
+                        portais de busca e outros links interessantes.</li>
+                    <li class="collection-item">Informações sobre eventos da área.</li>
+                    <li class="collection-item">Notícias.</li>
+                </ul>
+                <p class="justify"> Possui um sistema de filtros que facilita a busca, pois os estudos foram classificados e organizados
+                    de acordo com alguns itens. Navegue e conheça o CREMME.</p>
 
-                    Erat interdum morbi enim vitae sagittis maecenas torquent, ullamcorper posuere quisque nunc ipsum libero, sollicitudin imperdiet hac conubia aliquam donec. dolor aliquet lacinia eget velit taciti eget lorem ante donec per consectetur porta, facilisis faucibus aliquam massa aliquet imperdiet inceptos erat odio aliquet nibh. arcu donec purus pulvinar dictum auctor nostra fames egestas aliquam viverra feugiat nisi curabitur, posuere malesuada aliquet dictumst etiam morbi tristique congue leo morbi ac eros. ad convallis odio velit potenti dictumst senectus sapien consequat nam auctor tempor, duis platea imperdiet est eleifend elit vestibulum vivamus eleifend tincidunt, vivamus tellus taciti justo odio quis primis lacinia enim fringilla.
-
-                    Curabitur laoreet ultricies magna nisl class ipsum nostra bibendum venenatis egestas, platea donec senectus sagittis nunc dictumst iaculis torquent inceptos, sociosqu sollicitudin curabitur donec platea mi venenatis curabitur tincidunt. per proin fermentum vehicula netus nullam ac mauris duis class blandit, turpis porttitor non vulputate aptent lorem praesent eu varius, leo himenaeos enim fames lobortis velit maecenas sit lacinia. orci potenti tempor netus integer at donec, ornare blandit mattis consectetur viverra lacinia, nulla venenatis mattis tempus convallis vestibulum, condimentum porta tincidunt semper blandit. ut cursus quis ante ornare scelerisque ligula egestas pulvinar, vel eros tristique purus urna sagittis libero cursus, donec suspendisse bibendum tempus id fusce pulvinar. </p>
             </div>
             <div class="col s4 grey lighten-3 offset-s1">
                 <h3 class="center indigo-text">Notícias</h3>
-                <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ex aspernatur laborum voluptate quisquam praesentium quos beatae, nam deleniti nesciunt temporibus asperiores accusantium assumenda nobis ab, nihil quas incidunt ullam!</p>
+                <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ex aspernatur
+                    laborum voluptate quisquam praesentium quos beatae, nam deleniti nesciunt temporibus asperiores
+                    accusantium assumenda nobis ab, nihil quas incidunt ullam!</p>
             </div>
         </div>
-        </main>
-    </body>
-    <script src="js/ShowDivs.js"></script>
-    <?php require_once 'javas.html'; ?>
+    </main>
+</body>
+<script src="js/ShowDivs.js"></script>
+<?php require_once 'javas.html'; ?>
+
 </html>

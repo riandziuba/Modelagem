@@ -22,7 +22,7 @@
                 <div class="col l2 m2 s10 offset-s1 offset-l1 offset-m1">
                     <img src="img/Nilva.jpg" width="200" class="circle"><br>
                     <h4 class="fontecontato">Nilva</h4>
-                    <p>-</p>
+                    <p><a href="mailto:nb.girardi@gmail.com">nb.girardi@gmail.com</a></p>
                 </div>
                 <div class="col l2 m2 s10 offset-s1 offset-l1 offset-m1 ">
                     <img src="img/Mateus.jpg"  width="200" class="circle"><br>
@@ -40,6 +40,23 @@
                     <img src="img/Evandro.jpg" width="200" class="circle"><br>
                     <h4 class="fontecontato">Evandro</h4>
                     <p><a href="mailto:evandrosocrepa@gmail.com">evandrosocrepa@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="col s12 row center-align">
+                <br><br>
+                <h4 class="center blue-text text-darken-3">Colaboradores Externos</h4>
+                <br><br>
+                <div class="col l3 m3 s10 offset-s1 offset-l1 offset-m2">
+                    <img src="img/Zulma.jpg" width="200" height="200" class="circle"><br>
+                    <h4 class="fontecontato">Zulma Elizabete de Freitas Madruga</h4>
+                </div>
+                <div class="col l3 m3 s10 ">
+                    <img src="img/Danusa.jpg" width="200" height="200" class="circle"><br>
+                    <h4 class="fontecontato">Danusa de Lara Bonotto</h4>
+                </div>
+                <div class="col l3 m3 s10">
+                    <img src="img/Maria.jpg" width="200" height="200" class="circle"><br>
+                    <h4 class="fontecontato">Maria Salett Biembengut</h4>
                 </div>
             </div>
         </main>

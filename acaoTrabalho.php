@@ -5,13 +5,14 @@
 require_once 'autoload.php';
 $vetor[1] = $_POST['titulo'];
 $vetor[2] = $_POST['instituicao'];
-$vetor[3] = $_POST['meios'];
-$vetor[4] = $_POST['palavra'];
-$vetor[5] = $_POST['nivel'];
-$vetor[6] = $_POST['tipo'];
-$vetor[7] = $_POST['ano'];
-$vetor[8] = $_POST['resumo'];
-$vetor[9] = $_POST['link'];
+$vetor[3] = $_POST['secao'];
+$vetor[4] = $_POST['local']; 
+$vetor[5] = $_POST['palavra'];
+$vetor[6] = $_POST['nivel'];
+$vetor[7] = $_POST['tipo'];
+$vetor[8] = $_POST['ano'];
+$vetor[9] = $_POST['resumo'];
+$vetor[10] = $_POST['link'];
 
 if(!empty($_POST['autores']) and is_array($_POST['autores'])){
     $result = implode(' <br> ', $_POST['autores']);

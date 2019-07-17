@@ -9,7 +9,7 @@
             printf("Error: %s\n", mysqli_error($GLOBALS['conexao']));
             exit();
         }
-        echo "<select name='$nome' ".($multi? "multiple = 'multiple'":"")."> <option disabled>Escolha uma opção</option>";
+        echo "<select name='$nome' ".($multi? "multiple = 'multiple'":"")."> <option value='-1'>(nenhum)</option>";
         while ($row = mysqli_fetch_array($resultado)) {
             $aux='';
             if ($codigos == $row[$codigo]) {
