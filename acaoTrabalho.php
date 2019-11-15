@@ -23,7 +23,7 @@ $autores = $_POST['autor'];
 
 }
 
-$orientadores = $_POST['orientador'];
+$orientadores = isset($_POST['orientador'])?$_POST['orientador']:"";
 $tabela = $_POST['tabela'];
 $acao = $_POST['acao'];
 if ($acao == "inserir") {
@@ -42,6 +42,7 @@ if ($acao == "inserir") {
         }
          
         $banco->setTabela("orientadordotrabalho");
+        if(is_array($orientadores))
         foreach ($orientadores as $key){
             $vetor2[1] = $key;
             

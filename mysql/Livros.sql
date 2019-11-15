@@ -1,13 +1,12 @@
 use projeto;
- 
--- create table livros(
--- 	id int auto_increment primary key,
---     titulo varchar(100),
---     autor varchar(150),
---     sobre varchar(1000),
---     link varchar(200),
---     foto varchar(100)
---   );
+create table if not exists  livros(
+	id int auto_increment primary key,
+    titulo varchar(1000),
+    autor varchar(150),
+    sobre varchar(1000),
+   link varchar(200),
+   foto varchar(100)
+ );
 
 insert into livros 
 values (null, 'Matemática Para os Anos Iniciais', 'Edvonete Souza de Alencar e Etienne Lautenschlager', 
@@ -70,6 +69,14 @@ values (null, 'Matemática Para os Anos Iniciais', 'Edvonete Souza de Alencar e 
           construção de seus próprios modelos, utilizando-se da variedade de exemplos apresentados. É uma obra dinâmica
           que pode ser aplicada em diversas situações, tais como - texto complementar para disciplinas específicas,
           material para desenvolvimento de programas de iniciação científica, subsídio para programas de capacitação e
-          aperfeiçoamento de professores ou simplesmente, para estudos individuais.', 'https://editoracontexto.com.br/autores/rodney-carlos-bassanezi/ensino-aprendizagem-com-modelagem-matematica.html', 'img/Livros/14.png');
+          aperfeiçoamento de professores ou simplesmente, para estudos individuais.', 'https://editoracontexto.com.br/autores/rodney-carlos-bassanezi/ensino-aprendizagem-com-modelagem-matematica.html', 'img/Livros/14.png'),
+		(null, 'MODELAGEM MATEMATICA NO ENSINO FUNDAMENTAL', 'Maria Salett Biembengut', 
+        'A modelagem matemática, processo envolvido na elaboração de modelo de qualquer área do conhecimento, 
+        tem estado no âmago das reformas curriculares de matemática da educação, em vários países, nas últimas três décadas. 
+        Propicia aos estudantes, desde os anos iniciais da educação básica: usar a matemática para compreender, resolver uma situação-problema 
+        das ciências da natureza ou humana, estimular',
+        'https://www.travessa.com.br/modelagem-matematica-no-ensino-fundamental/artigo/cf35902a-677e-4bba-9fc3-e78be8314ff6','img/Livros/9.jpg'),
+        (null, 'Modelagem Matemática na Educação Matemática', 'Jonei Cerqueira Barbosa, Ademir Donizeti Caldeira e Jussara de Loiala Araújo', '', 'http://www.sbembrasil.org.br/sbembrasil/index.php/publicacoes/colecao-sbem','img/Livros/12.jfif'),
+        (null, 'Modelagem Matemática & Implicações no Ensino e na Aprendixagem de Matemática', 'Maria Salett Biembengut', 'Neste livro, a autora procura esclarecer o que são modelo e modelagem matemática, e ensina como aprender modelagem, como utilizar a essência da modelagem no ensino - modelação matemática - e como produzir um trabalho de modelagem matemática', 'https://www.travessa.com.br/modelagem-matematica-e-implicacoes-no-ensino-e-na-aprendizagem-de-matematica-2-ed-2004/artigo/8c491faf-9e08-4e4f-a818-dc85252c594e', 'img/Livros/3.jfif');
 	  
 	

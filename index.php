@@ -161,9 +161,7 @@
             </div>
             <div class="col s4 grey lighten-3 offset-s1">
                 <h3 class="center indigo-text">Notícias</h3>
-                <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ex aspernatur
-                    laborum voluptate quisquam praesentium quos beatae, nam deleniti nesciunt temporibus asperiores
-                    accusantium assumenda nobis ab, nihil quas incidunt ullam!</p>
+                <p class="justify"><a href="http://www.eventos.sbem.com.br/index.php/cnmem/2019" style="text-decoration: none; color:black" target="_blanck">I Conferência Nacional sobre Modelagem na Educação Matemática</a></p>
             </div>
         </div>
     </main>

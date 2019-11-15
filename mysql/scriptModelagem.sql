@@ -23,7 +23,7 @@ create database projeto;
   
    create table trabalho (
     id int primary key auto_increment,
-    titulo varchar(200) not null unique,
+    titulo varchar(200) not null,
     instituicao varchar(200),
     secao int,
     `local` int,
@@ -68,15 +68,7 @@ create database projeto;
     foreign key (id_orientador) references orientador(id),
     foreign key (id_trabalho) references trabalho(id)
   );
-  
-  CREATE TABLE livros (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    titulo VARCHAR(100),
-    autor VARCHAR(150),
-    sobre VARCHAR(1000),
-    link VARCHAR(200),
-    foto VARCHAR(100)
-);
+
   
   insert into `local` 
   values(null, 'Revista'),
